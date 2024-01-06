@@ -4,7 +4,6 @@ module.exports = {
     themeConfig: {
         logo: '/images/logo.png',
         overrideTheme: 'dark',
-        overrideTheme: { light: [6, 18], dark: [18, 6] },
         nav:[
             {text:'Home', link:'/'},
             {text:'Github', link:'https://github.com/starboy7227'},
@@ -20,22 +19,25 @@ module.exports = {
         
         sidebar: [
             {
-                title: 'Step behind',      
-                path: '/Step behind/What is \'step behind\'/',     
+                title: 'About me',      
+                path: '/About_me/',     
                 collapsable: false, 
                 children: [
-                    '/Step behind/What is \'step behind\'/'
+                  '/About_me/Introduction/'
+                ]
+            },
+
+            {
+                title: 'Step behind',      
+                path: '/Step behind/',     
+                collapsable: false, 
+                children: [
+                    '/Step behind/What is \'step behind\'/',
+                    '/Step behind/Ignorance and arrogant/'
                 ]
             },
             
-            {
-              title: 'About me',      
-              path: '/About_me/Introduction/',     
-              collapsable: false, 
-              children: [
-                '/About_me/Introduction/'
-              ]
-            },
+            
         ],
 
     },
